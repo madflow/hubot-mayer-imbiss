@@ -1,0 +1,33 @@
+{
+  "name": "hubot-mayer-imbiss",
+  "description": "Hubot script package for quick access to the Tageskarte of the second Metzger on the Venloer Straße",
+  "version": "0.0.1",
+  "author": "madflow <madflow@localhost>",
+  "license": "WFYBPL",
+  "keywords": [
+    "hubot",
+    "mayer-imbiss",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madflow/hubot-mayer-imbiss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/madflow/hubot-mayer-imbiss/issues"
+  },
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  }
+}
