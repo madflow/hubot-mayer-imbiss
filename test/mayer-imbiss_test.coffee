@@ -13,7 +13,7 @@ describe 'mayer-imbiss', ->
     require('../src/mayer-imbiss')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/metzger/)
+    expect(@robot.respond).to.have.been.calledWith(/metzger/i)
 
   it 'registers a hear listener', ->
     expect(@robot.hear).to.have.been.calledWith(/Wie lautet nochmal die Adresse von dem zweiten Metzger auf der Venloer/i)
