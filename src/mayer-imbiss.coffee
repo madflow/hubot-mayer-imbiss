@@ -17,7 +17,7 @@ module.exports = (robot) ->
                     msg.send "HTTP 200 erwartet... Die Erwartung wurde nicht erfüllt :S"
                     return
 
-                $ = cheerio.load(window1252.decode(body))
+                $ = cheerio.load(windows1252.decode(body))
 
                 resp = ''
 
