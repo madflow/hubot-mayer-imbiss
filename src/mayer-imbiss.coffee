@@ -10,7 +10,7 @@ module.exports = (robot) ->
 
     robot.respond /metzger/i, (msg) ->
 
-        robot.http(robot.base_url)
+        robot.http(robot.base_url, {encoding:'binary'})
             .get() (err, res, body) ->
 
                 if res.statusCode isnt 200
