@@ -1,4 +1,5 @@
 cheerio = require('cheerio')
+windows1252 = require('windows-1252')
 
 module.exports = (robot) ->
 
@@ -16,7 +17,7 @@ module.exports = (robot) ->
                     msg.send "HTTP 200 erwartet... Die Erwartung wurde nicht erfüllt :S"
                     return
 
-                $ = cheerio.load(body)
+                $ = cheerio.load(window1252.decode(body))
 
                 resp = ''
 
