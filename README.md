@@ -14,6 +14,10 @@ The script package is licensed under the WFYBPL (WHATEVER FLOATS YOUR BOAT PUBLI
 
 Add "hubot-mayer-imbiss" to external-scripts.json
 
+# Available Extensions
+
++ Convenience Listener for the Burrito Laden ("Wieviel kosten die Burritos eigentlich?").
+
 ## Directory Structure
 
 Using the common directory structure for hubot script packages it will be easy
