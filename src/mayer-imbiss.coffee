@@ -4,9 +4,13 @@ windows1252 = require('windows-1252')
 module.exports = (robot) ->
 
     robot.base_url = 'http://www.mayer-imbiss.de/index.htm'
+    robot.burrito  = 'http://www.bayareaburrito.de/images/menue/BAB_v_menu.pdf'
 
     robot.hear /Wie lautet nochmal die Adresse von dem zweiten Metzger auf der Venloer/i, (msg) ->
         msg.emote "Guckst du: " + robot.base_url + " :D"
+        
+    robot.hear /Wieviel kosten die Burritos eigentlich?/i, (msg) ->
+        msg.emote "Guckst du: " + robot.burrito + " :S"
 
     robot.respond /metzger/i, (msg) ->
 
