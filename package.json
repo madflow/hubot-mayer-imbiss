@@ -1,7 +1,7 @@
 {
   "name": "hubot-mayer-imbiss",
   "description": "Hubot script package for quick access to the Tageskarte of the second Metzger on the Venloer Straße",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "madflow <madflow@localhost>",
   "license": "WFYBPL",
   "keywords": [
