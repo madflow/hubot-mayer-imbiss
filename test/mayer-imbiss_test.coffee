@@ -17,3 +17,6 @@ describe 'mayer-imbiss', ->
 
   it 'registers a hear listener', ->
     expect(@robot.hear).to.have.been.calledWith(/Wie lautet nochmal die Adresse von dem zweiten Metzger auf der Venloer/i)
+    
+  it 'registers another hear listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/Wieviel kosten die Burritos eigentlich?/i)
