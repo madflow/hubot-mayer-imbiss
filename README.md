@@ -17,6 +17,8 @@ Add "hubot-mayer-imbiss" to external-scripts.json
 # Available Extensions
 
 + Convenience Listener for the Burrito Laden ("Wieviel kosten die Burritos eigentlich?").
++ :S
++ leet me somethin
 
 ## Directory Structure
 

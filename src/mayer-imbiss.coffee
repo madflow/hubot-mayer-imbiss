@@ -1,5 +1,6 @@
 cheerio = require('cheerio')
 windows1252 = require('windows-1252')
+leet = require('leet');
 
 module.exports = (robot) ->
 
@@ -8,9 +9,16 @@ module.exports = (robot) ->
 
     robot.hear /Wie lautet nochmal die Adresse von dem zweiten Metzger auf der Venloer/i, (msg) ->
         msg.emote "Guckst du: " + robot.base_url + " :D"
-        
+
     robot.hear /Wieviel kosten die Burritos eigentlich?/i, (msg) ->
         msg.emote "Guckst du: " + robot.burrito + " :S"
+
+    robot.hear /:S/i, (msg) ->
+        msg.emote ":S"
+
+    robot.respond /leet me (.*)/i, (msg) ->
+        text = leet.convert(msg.match[1])
+        msg.send(text)
 
     robot.respond /metzger/i, (msg) ->
 
