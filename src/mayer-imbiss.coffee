@@ -17,7 +17,7 @@ module.exports = (robot) ->
         msg.emote ":S"
 
     robot.respond /leet me (.*)/i, (msg) ->
-        text = leet.convert(msg.match[1])
+        var text = leet.convert(msg.match[1])
         msg.send(text)
 
     robot.respond /metzger/i, (msg) ->
