@@ -26,3 +26,9 @@ describe 'mayer-imbiss', ->
 
   it 'registers very important hear listener', ->
     expect(@robot.hear).to.have.been.calledWith(/:S/i)
+
+  it 'registers a cool respond listener', ->
+    expect(@robot.respond).to.have.been.calledWith(/cool/i)
+
+  it 'registers a cool hear listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/cool/i)

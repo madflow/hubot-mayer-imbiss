@@ -1,6 +1,7 @@
 cheerio = require('cheerio')
 windows1252 = require('windows-1252')
 leet = require('leet');
+cool = require('cool-ascii-faces')
 
 module.exports = (robot) ->
 
@@ -19,6 +20,12 @@ module.exports = (robot) ->
     robot.respond /leet me (.*)/i, (msg) ->
         text = leet.convert(msg.match[1])
         msg.send(text)
+
+    robot.hear /cool/i, (msg) ->
+        msg.emote cool()
+
+    robot.respond /cool/i, (msg) ->
+        msg.send(cool())
 
     robot.respond /metzger/i, (msg) ->
 
@@ -53,4 +60,3 @@ module.exports = (robot) ->
                                 resp += "\n" + val
 
                 msg.send resp
-
