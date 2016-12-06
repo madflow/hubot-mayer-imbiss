@@ -1,5 +1,4 @@
 cheerio = require('cheerio')
-windows1252 = require('windows-1252')
 leet = require('leet');
 cool = require('cool-ascii-faces')
 
@@ -29,14 +28,14 @@ module.exports = (robot) ->
 
     robot.respond /metzger/i, (msg) ->
 
-        robot.http(robot.base_url, {encoding:'binary'})
+        robot.http(robot.base_url)
             .get() (err, res, body) ->
 
                 if res.statusCode isnt 200
                     msg.send "HTTP 200 erwartet... Die Erwartung wurde nicht erfüllt :S"
                     return
 
-                $ = cheerio.load(windows1252.decode(body))
+                $ = cheerio.load(body)
 
                 resp = ''
 
