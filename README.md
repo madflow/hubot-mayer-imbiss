@@ -1,4 +1,9 @@
 [![Build Status](https://travis-ci.org/madflow/hubot-mayer-imbiss.png)](https://travis-ci.org/madflow/hubot-mayer-imbiss)
+![Project Status](https://img.shields.io/badge/Project%20Status-abandoned-red.svg)
+
+# Status - Abondened 
+
+Turns out the food is not that great afterall ...
 
 # What gives?
 
